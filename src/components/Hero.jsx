@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { authorityItems, brands, heroProject, showcaseMetrics, whatsappLink } from '../data'
+import { authorityItems, brands, heroProject, whatsappLink } from '../data'
 
 export default function Hero({ onPortfolio }){
   return (
@@ -38,14 +38,6 @@ export default function Hero({ onPortfolio }){
               <button onClick={onPortfolio} className="rounded-full border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-white/10">
                 Ver obras realizadas
               </button>
-            </div>
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              {showcaseMetrics.map((metric) => (
-                <div key={metric.label} className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
-                  <div className="text-3xl font-black text-white">{metric.value}</div>
-                  <div className="mt-2 text-sm leading-6 text-gray-400">{metric.label}</div>
-                </div>
-              ))}
             </div>
             <div className="mt-10">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gray-500">Marcas identificadas nas obras</p>

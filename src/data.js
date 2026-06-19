@@ -9,6 +9,7 @@ export const whatsappLink = 'https://wa.me/5541996074886'
 export const whatsappNumber = '(41) 99607-4886'
 export const whatsappNumberIntl = '+55 41 99607-4886'
 export const instagramHandle = '@artelux'
+export const instagramLink = 'https://www.instagram.com/artelux1/'
 
 export const categoryMeta = {
   letreiros: {
@@ -145,12 +146,6 @@ export const portfolio = [
 ]
 
 export const heroProject = portfolio[0]
-
-export const showcaseMetrics = [
-  { value: String(portfolio.length), label: 'obras reais no acervo inicial' },
-  { value: '4', label: 'marcas identificadas nas imagens' },
-  { value: '4', label: 'categorias executadas pela Artelux' }
-]
 
 export const authorityItems = [
   'Letreiros',

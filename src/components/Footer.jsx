@@ -1,5 +1,5 @@
 import React from 'react'
-import { instagramHandle, whatsappLink, whatsappNumber } from '../data'
+import { instagramHandle, instagramLink, whatsappLink, whatsappNumber } from '../data'
 
 export default function Footer(){
   return (
@@ -18,7 +18,7 @@ export default function Footer(){
           </div>
           <div>
             Instagram:{' '}
-            <a href="https://instagram.com/artelux" target="_blank" rel="noreferrer" className="text-gray-100">
+            <a href={instagramLink} target="_blank" rel="noreferrer" className="text-gray-100">
               {instagramHandle}
             </a>
           </div>
