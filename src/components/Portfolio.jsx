@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioItem from './PortfolioItem'
 import PortfolioModal from './PortfolioModal'
+import SectionCta from './SectionCta'
 import { categoryMeta, portfolio } from '../data'
 
 export default function Portfolio(){
@@ -53,6 +54,7 @@ export default function Portfolio(){
             />
           ))}
         </div>
+        <SectionCta />
       </div>
       <PortfolioModal
         items={items}

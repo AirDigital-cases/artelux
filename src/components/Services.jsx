@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import SectionCta from './SectionCta'
 import { services } from '../data'
 
 export default function Services(){
@@ -11,6 +12,7 @@ export default function Services(){
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map(s => <ServiceCard key={s.id} service={s} />)}
         </div>
+        <SectionCta />
       </div>
     </section>
   )

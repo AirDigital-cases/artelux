@@ -5,6 +5,11 @@ import maderoFachada from './assets/obras/fachadas/madero-fachada-iluminada.jpeg
 import pergoladoResidencial from './assets/obras/pergolados/pergolado-residencial.jpeg'
 import rc7MotorsCobertura from './assets/obras/coberturas/rc7-motors-cobertura.jpeg'
 
+export const whatsappLink = 'https://wa.me/5541996074886'
+export const whatsappNumber = '(41) 99607-4886'
+export const whatsappNumberIntl = '+55 41 99607-4886'
+export const instagramHandle = '@artelux'
+
 export const categoryMeta = {
   letreiros: {
     label: 'Letreiros',
@@ -147,11 +152,11 @@ export const showcaseMetrics = [
   { value: '4', label: 'categorias executadas pela Artelux' }
 ]
 
-export const heroHighlights = [
-  'Obras em altura',
-  'Fachadas iluminadas',
-  'Grandes letreiros',
-  'Estruturas metálicas premium'
+export const authorityItems = [
+  'Letreiros',
+  'Fachadas',
+  'Pergolados',
+  'Coberturas'
 ]
 
 export const brands = [

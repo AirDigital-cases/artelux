@@ -1,4 +1,5 @@
 import React from 'react'
+import SectionCta from './SectionCta'
 import { differentials } from '../data'
 
 export default function Differentials(){
@@ -11,6 +12,7 @@ export default function Differentials(){
             <li key={i} className="p-4 bg-[rgba(255,255,255,0.02)] border border-gray-800 rounded">{d}</li>
           ))}
         </ul>
+        <SectionCta />
       </div>
     </section>
   )

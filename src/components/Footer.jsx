@@ -1,4 +1,5 @@
 import React from 'react'
+import { instagramHandle, whatsappLink, whatsappNumber } from '../data'
 
 export default function Footer(){
   return (
@@ -8,10 +9,19 @@ export default function Footer(){
           <div className="text-2xl font-bold gold-text">Artelux</div>
           <div className="text-sm text-gray-500 mt-2">Letreiros • Fachadas • Pergolados • Coberturas</div>
         </div>
-        <div className="flex gap-6 items-center text-sm text-gray-300">
-          <div>WhatsApp: <span className="text-gray-100">(00) 0 0000-0000</span></div>
-          <div>Instagram: <span className="text-gray-100">@artelux</span></div>
-          <div>Atendimento: São Paulo / Região</div>
+        <div className="flex flex-col items-center gap-3 text-sm text-gray-300 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-6">
+          <div>
+            WhatsApp:{' '}
+            <a href={whatsappLink} target="_blank" rel="noreferrer" className="text-gray-100">
+              {whatsappNumber}
+            </a>
+          </div>
+          <div>
+            Instagram:{' '}
+            <a href="https://instagram.com/artelux" target="_blank" rel="noreferrer" className="text-gray-100">
+              {instagramHandle}
+            </a>
+          </div>
         </div>
         <div className="text-sm text-gray-600">© {new Date().getFullYear()} Artelux. Todos os direitos reservados.</div>
       </div>

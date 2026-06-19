@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/Hero'
+import ImpactSection from './components/ImpactSection'
 import About from './components/About'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
@@ -7,6 +8,7 @@ import Brands from './components/Brands'
 import Differentials from './components/Differentials'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 export default function App(){
   const scrollToPortfolio = () => {
@@ -14,15 +16,11 @@ export default function App(){
     if(el) el.scrollIntoView({behavior:'smooth'})
   }
 
-  const requestQuote = () => {
-    const el = document.querySelector('#footer')
-    if(el) el.scrollIntoView({behavior:'smooth'})
-  }
-
   return (
     <div>
-      <Hero onPortfolio={scrollToPortfolio} onQuote={requestQuote} />
+      <Hero onPortfolio={scrollToPortfolio} />
       <main>
+        <ImpactSection />
         <About />
         <Services />
         <div id="portfolio"><Portfolio /></div>
@@ -30,6 +28,7 @@ export default function App(){
         <Differentials />
         <CTA />
       </main>
+      <FloatingWhatsApp />
       <Footer />
     </div>
   )

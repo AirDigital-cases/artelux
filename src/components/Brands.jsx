@@ -1,5 +1,6 @@
 import React from 'react'
 import BrandCard from './BrandCard'
+import SectionCta from './SectionCta'
 import { brands } from '../data'
 
 export default function Brands(){
@@ -12,6 +13,7 @@ export default function Brands(){
         <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           {brands.map((brand) => <BrandCard key={brand.id} brand={brand} />)}
         </div>
+        <SectionCta />
       </div>
     </section>
   )
