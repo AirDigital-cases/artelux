@@ -78,6 +78,7 @@ export const portfolio = [
     image: goldenTulipAltura,
     imagePosition: '42% 52%',
     alt: 'Hotel com letreiro Golden Tulip instalado em grande altura na cobertura, com vista para o mar.',
+    cardDesc: 'Letreiro em grande altura com leitura de longa distância e escala arquitetônica marcante.',
     desc: 'Projeto de letreiro em grande altura com leitura de longa distância e presença de marca em escala arquitetônica.',
     location: 'Cobertura hoteleira',
     highlights: ['Obra em altura', 'Hotelaria premium', 'Escala arquitetônica'],
@@ -91,6 +92,7 @@ export const portfolio = [
     image: primeCarFachada,
     imagePosition: '50% 46%',
     alt: 'Fachada da Prime Car Curitiba com pilares laranja e letreiro central em preto e branco.',
+    cardDesc: 'Fachada automotiva com acabamento brilhante e contraste forte para destacar a operação.',
     desc: 'Fachada automotiva com acabamento brilhante, contraste forte e entrada principal desenhada para destacar a marca.',
     location: 'Fachada comercial',
     highlights: ['ACM premium', 'Contraste forte', 'Entrada de alto impacto']
@@ -103,6 +105,7 @@ export const portfolio = [
     image: primeCarTotem,
     imagePosition: '50% 34%',
     alt: 'Ângulo vertical da fachada da Prime Car Curitiba destacando o letreiro instalado acima da entrada.',
+    cardDesc: 'Enquadramento vertical que valoriza o letreiro e o acabamento refinado da entrada.',
     desc: 'Enquadramento vertical que valoriza o letreiro, os pilares metálicos e o acabamento refinado da entrada.',
     location: 'Frente comercial',
     highlights: ['Marca protagonista', 'Acabamento refinado', 'Visual premium']
@@ -115,6 +118,7 @@ export const portfolio = [
     image: rc7MotorsCobertura,
     imagePosition: '50% 44%',
     alt: 'Cobertura metálica da RC7 Motors com letreiro iluminado e estrutura aparente.',
+    cardDesc: 'Cobertura metálica de grande vão com comunicação visual iluminada e presença urbana.',
     desc: 'Cobertura metálica de grande vão com identidade visual iluminada e estrutura aparente de forte impacto urbano.',
     location: 'Cobertura comercial',
     highlights: ['Estrutura metálica', 'Fachada iluminada', 'Grande letreiro']
@@ -127,6 +131,7 @@ export const portfolio = [
     image: maderoFachada,
     imagePosition: '50% 50%',
     alt: 'Fachada iluminada da marca Madero em ambiente interno com acabamento premium.',
+    cardDesc: 'Fachada iluminada com composição refinada e percepção imediata de padrão premium.',
     desc: 'Fachada iluminada com composição simétrica, comunicação de marca refinada e forte percepção de padrão premium.',
     location: 'Frente de loja',
     highlights: ['Iluminação cênica', 'Marca reconhecida', 'Acabamento premium']
@@ -139,6 +144,7 @@ export const portfolio = [
     image: pergoladoResidencial,
     imagePosition: '50% 55%',
     alt: 'Pergolado metálico residencial instalado na fachada com linhas retas e visual contemporâneo.',
+    cardDesc: 'Pergolado metálico com desenho limpo e linguagem contemporânea integrada à fachada.',
     desc: 'Pergolado metálico com desenho limpo e contemporâneo, integrando proteção solar e linguagem arquitetônica.',
     location: 'Residencial',
     highlights: ['Estrutura metálica', 'Linhas contemporâneas', 'Proteção com design']
