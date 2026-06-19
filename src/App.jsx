@@ -15,7 +15,8 @@ export default function App(){
   }
 
   const requestQuote = () => {
-    window.location.href = '#footer'
+    const el = document.querySelector('#footer')
+    if(el) el.scrollIntoView({behavior:'smooth'})
   }
 
   return (
