@@ -8,7 +8,10 @@ export default function Portfolio(){
   const [filter, setFilter] = useState('all')
   const [selectedId, setSelectedId] = useState(null)
   const categories = ['all', ...Object.keys(categoryMeta)]
-  const featuredItem = portfolio.find((project) => project.featured) ?? portfolio[0]
+  const defaultFeaturedItem = portfolio.find((project) => project.featured) ?? portfolio[0]
+  const featuredItem = filter === 'all'
+    ? defaultFeaturedItem
+    : portfolio.find((project) => project.cat === filter) ?? defaultFeaturedItem
   const filteredItems = filter === 'all'
     ? portfolio.filter((project) => project.id !== featuredItem.id)
     : portfolio.filter((project) => project.cat === filter && project.id !== featuredItem.id)
@@ -44,7 +47,9 @@ export default function Portfolio(){
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#d4af37]">Curadoria visual</p>
             <h4 className="mt-4 text-2xl font-black text-white">Projeto destaque da vitrine</h4>
             <p className="mt-4 text-sm leading-7 text-gray-300">
-              O Golden Tulip abre a seleção por combinar altura, escala arquitetônica e leitura de marca com padrão visual premium.
+              {filter === 'all'
+                ? 'O Golden Tulip abre a seleção por combinar altura, escala arquitetônica e leitura de marca com padrão visual premium.'
+                : `${featuredItem.title} assume o destaque da vitrine ao representar a categoria ${activeCategory?.label.toLowerCase()} com presença visual, acabamento e enquadramento consistentes.`}
             </p>
             <div className="mt-8">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gray-500">Filtrar projetos</p>
